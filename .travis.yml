@@ -1,0 +1,9 @@
+sudo: required
+
+env:
+  global:
+    - VERSION_NUMBER="$(cat version.txt | tr -d '\n')"
+
+script: ./travis_build_wrapper.sh
+
+after_sucess: ./travis_copy_to_public_repo.sh
