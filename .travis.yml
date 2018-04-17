@@ -4,6 +4,10 @@ env:
   global:
     - VERSION_NUMBER="$(cat version.txt | tr -d '\n')"
 
+# Use GitHub API token for multi-repo authentication
+before_install:
+  - echo -e "machine github.com\n  login nohle\n  password $CI_USER_PASSWORD" >> ~/.netrc
+
 script: ./travis_build_wrapper.sh
 
 after_success: ./travis_copy_to_public_repo.sh
