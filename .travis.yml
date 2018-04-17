@@ -6,7 +6,7 @@ env:
 
 # Use GitHub API token for multi-repo authentication
 before_install:
-  - echo -e "machine github.com\n  login nohle\n  password $CI_USER_PASSWORD" >> ~/.netrc
+  - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
 
 script: ./travis_build_wrapper.sh
 
