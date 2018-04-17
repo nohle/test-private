@@ -6,4 +6,4 @@ env:
 
 script: ./travis_build_wrapper.sh
 
-after_sucess: ./travis_copy_to_public_repo.sh
+after_success: ./travis_copy_to_public_repo.sh
