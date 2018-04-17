@@ -10,7 +10,7 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ] || [ "$TRAVIS_BRANCH" != "release" ]; t
 fi
 
 PUBLIC_REPO_NAME="test-public"
-PUBLIC_REPO_URL="git@github.com:nohle/$PUBLIC_REPO_NAME.git"
+PUBLIC_REPO_URL="https://github.com/nohle/test-public.git"
 
 # Clone the public repo.
 cd "$HOME"
