@@ -1,1 +1,3 @@
 Copy me too!
+
+Here is a new sentence for our second commit.
